@@ -20,7 +20,7 @@ function App() {
       ? setCurState((pre) => pre + a.target.innerText) : setCurState(a.target.innerText);
     setTotal(false);
   };
-  
+
 /*แสดงเลขที่พิมพ์*/
   useEffect(()=>{
     setInput(curState);
@@ -43,7 +43,9 @@ function App() {
   };
 
   const reset = () => {
-
+    setPerState("");
+    setCurState("");
+    setInput("0");
   };
 
   return (
